@@ -1,21 +1,55 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 // var stringTow string = "Hello World"
 // var numberTow int = 2
 // var foltTow float64 = 20.67
 // var boolTow bool = false
 
-// Declier Constinc 
+// Decliear Constinc
 const (
 	AppName = "StockFlow"
 	Version = 1.0
 	MaxUser = 500
 )
 
+// How TO  Declier IOTA Count a use  
+const (
+	Sunday = iota + 1
+	Monday
+	Tuesday
+	Wednesday
+	Thursday
+	Friday
+	Saturday
+)
+
 func main() {
 	fmt.Println("Syntax & Data Type")
+
+	i1 := 100;
+	f1 := float64(i1);
+
+	fmt.Println(f1)
+
+	f2  := 22.34;
+	i2 := int(f2);
+	fmt.Println(i2)
+
+	i3 :=  65;
+	s1 := strconv.Itoa(i3);
+	fmt.Println(s1)
+
+
+	y2 := "YGFYU";
+	i5, _ := strconv.Atoi(y2);
+	fmt.Println(i5)
+
+
 	// var stringOne string = "Hello"
 	// var numberOne int = 1
 	// var foltOne float64 = 19.67
@@ -58,4 +92,13 @@ func main() {
 	fmt.Println(AppName)
 	fmt.Println(Version)
 	fmt.Println(MaxUser)
+
+	
+    fmt.Println(Sunday)
+	fmt.Println(Monday)
+	fmt.Println(Tuesday)
+	fmt.Println(Wednesday)
+	fmt.Println(Thursday)
+	fmt.Println(Friday)
+	fmt.Println(Saturday)
 }
