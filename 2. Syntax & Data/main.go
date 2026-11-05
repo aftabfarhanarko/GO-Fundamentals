@@ -7,6 +7,13 @@ import "fmt"
 // var foltTow float64 = 20.67
 // var boolTow bool = false
 
+// Declier Constinc 
+const (
+	AppName = "StockFlow"
+	Version = 1.0
+	MaxUser = 500
+)
+
 func main() {
 	fmt.Println("Syntax & Data Type")
 	// var stringOne string = "Hello"
@@ -26,7 +33,7 @@ func main() {
 	foltOne := 34.56
 	boolOne := true
 
-    // Change variable values
+	// Change variable values
 	stringOne = "Hello Go Lang Variable"
 	numberOne = 3333
 	foltOne = 00.0
@@ -47,4 +54,8 @@ func main() {
 	fmt.Println(u, i)
 	fmt.Println(e, w)
 	fmt.Println(o, p)
+
+	fmt.Println(AppName)
+	fmt.Println(Version)
+	fmt.Println(MaxUser)
 }
